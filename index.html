@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="board-container flex-container flex-column flex-center setBg">
+      <div class="flex-container">
+          <div class="title">
+						<center>
+							<span class="tic">TIC</span>
+							<span class="tac">TAC</span>
+							<span class="toe">TOE</span>
+							<span class="games">GAMES</span><br>
+							<button class="onePlayer">1 Player</button>
+							<button class="twoPlayer">2 Player</button>
+							<img src="image/example.gif" alt="winner" class="img" width="70%" height="350px">
+
+							<div class="flex-container flex-center">
+				          <div id="pemain" class="pemain"></div>
+				      </div>
+
+				      <div class="displayForm displayNone">
+				        <form name="frm" id="options" class="setbox">
+									<h5 id="h5" class="playername2">Please Insert Username <br>by Player for the Game</h5>
+				          <div id="input1" class="flex-container flex-center playername2">
+				              <span class="nameplayer1">Player 1 <span class="Titik2">:</span></span><input type="text" id="Player1" name="Player1" value=""><br>
+				          </div>
+				          <div id="input2" class="flex-container flex-center playername2">
+				              <span class="nameplayer2">Player 2 <span class="Titik2">:</span></span><input type="text" id="player2" name="Player2" value="">
+				          </div>
+									<div id="input3" class="flex-container flex-center flex-left marginTop10">
+										<label for="boardsize_input" class="boardsize">Board Size<span class="TitikBoard">:</span></label>
+											<input id="boardsize_input" type="number" min="2" max="50" value="3" class="BoardSize"></input>
+											<label for="board color" class="boardColor">Board Color:</label>
+												<input id="boardcolor_input" type="color" value="#eeeeee" class="BoardColor"></input>
+									</div>
+									<div id="input4" class="flex-container flex-center marginTop10">
+
+									</div>
+				          <div id="btn1" class="flex-container flex-center marginTop10">
+				              <button type="button" class="play" name="button">Start Game</button>
+											<button class="closegame">Close</button>
+				          </div>
+				        </form>
+				      </div>
+
+							<div class="setbox tictactoe displayNone">
+								<div id="mainReset" class="flex-container flex-center displayNone">
+					          <button type="button" class="playAgain" name="button">Play Again</button>
+					          <button type="button" class="reset" name="button">Exit Game</button>
+					      </div>
+								<div id="mainBoard" class="">
+									<div id="turnIndicator"></div>
+									<div id="game">
+								</div>
+							</div>
+						</center>
+
+					</div>
+      </div>
+		</div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content setBg">
+        <span class="close">&times;</span>
+          <div class="title">
+						<center>
+							<span class="tic">TIC</span>
+							<span class="tac">TAC</span>
+							<span class="toe">TOE</span>
+							<span class="games">GAMES</span><br>
+							<div id="validationWinner" class="winner"></div>
+			        <img src="image/winner.gif" alt="winner" width="100%" height="500px">
+							<h6>By Riski Wahyudi - riski.wahyudi84@gmail.com</h6>
+						</center>
+					</div>
+      </div>
+    </div>
+
+		<div id="HomeModal" class="modal">
+      <div class="modal-content setBg">
+        <div class="titlegame">
+					<center>
+						<span class="tic">TIC</span>
+						<span class="tac">TAC</span>
+						<span class="toe">TOE</span>
+						<span class="games">GAMES</span><br>
+						<span class="closeModal"><button class="btnPlayGame">Play Game</button></span>
+						<br>
+						<img src="image/example.gif" alt="winner" width="40%" height="400px">
+						<h6>By Riski Wahyudi - riski.wahyudi84@gmail.com</h6>
+					</center>
+
+				</div>
+      </div>
+    </div>
+
+	</body>
+</html>
