@@ -1,0 +1,300 @@
+html,body
+{
+  height: 100%l
+  font-family:'Open Sans',sans-serif;
+  background-color: #868585;
+}
+
+.flex-container
+{
+    display: flex;
+}
+
+.flex-column
+{
+  flex-direction: column;
+}
+
+.flex-center
+{
+  justify-content: center;
+  align-items: center;
+}
+
+.setBg
+{
+  background-image: linear-gradient(white, #0583ef) !important;
+}
+
+.title,
+.titlegame
+{
+  font-size: 60px;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  letter-spacing: 3px;
+}
+
+.title{
+  margin-top: 20px;
+}
+
+ span.tic,
+ span.tac,
+ span.toe,
+ span.games
+{
+  font-weight: bold;
+  color: white;
+}
+
+.displayForm,
+.tictactoe{margin-bottom: 30px;}
+
+ span.tic
+{
+  text-shadow: -2px 0 #400202, 0 2px red, 3px 0 red, 0 -1px red;
+}
+
+ span.tac
+{
+  text-shadow: -2px 0 blue, 0 2px blue, 3px 0 blue, 0 -1px blue;
+}
+
+ span.toe
+{
+  text-shadow: -2px 0 green, 0 2px green, 3px 0 green, 0 -1px green;
+}
+
+span.games
+{
+  text-shadow: -2px 0 orange, 0 2px orange, 3px 0 orange, 0 -1px orange;
+}
+
+.flex-wrap
+{
+  flex-wrap: wrap;
+}
+
+.board-container
+{
+  /*width: 100%;*/
+  height: 100%;
+  width: 70%;
+  margin: 2% auto;
+}
+
+.board
+{
+  width: 318px;
+}
+
+.square
+{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #0e87f0;
+  font-size: 56px;
+}
+
+.square:hover
+{
+  background-color: floralwhite;
+}
+
+.winner
+{
+  display: none;
+  padding: 10px;
+  font-size: 32px;
+  color: royalblue;
+  text-align: center;
+}
+
+.pemain
+{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.reset,
+.playAgain
+{
+  padding: 10px;
+  margin: 10px;
+}
+
+.displayNone{display: none;}
+.displayBlock{display: block;}
+.marginTop10{margin-top: 10px;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close,
+.closeModal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.closeModal:hover,
+.close:focus,
+.closeModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closeModal
+{
+  float: none !important;
+}
+
+/* style for button play game */
+.btnPlayGame,
+.onePlayer,
+.twoPlayer,
+.vsComputer,
+.play,
+.closegame,
+.playAgain,
+.reset {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.onePlayer,
+.twoPlayer,
+.vsComputer,
+.play,
+.closegame
+{
+  background-color: #4CAF50 !important;
+}
+
+.btnPlayGame:hover,
+.onePlayer:hover,
+.twoPlayer:hover,
+.vsComputer:hover,
+.play:hover,
+.closegame:hover,
+.playAgain:hover,
+.reset:hover {background-color: #3e8e41}
+
+.btnPlayGame:active,
+.onePlayer:active,
+.twoPlayer:active,
+.vsComputer:active,
+.play:active,
+.closegame:active,
+.playAgain:active,
+.reset:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.closegame{margin-left: 10px;}
+h5,h6
+{
+  margin-top: 0px !important;
+  font-size: 28px !important;
+  margin-bottom: 15px !important;
+  letter-spacing: 1px;
+  color: #797070;
+}
+h6
+{
+  margin-top: 10px !important;
+  font-size: 15px !important;
+}
+
+.nameplayer1,
+.nameplayer2,
+.boardsize,
+.boardColor
+{
+  font-size: 20px;
+  color: #797070;
+  letter-spacing: 2px;
+  margin-right: 14px;
+}
+
+input
+{
+  padding: 6px 8px;
+  font-size: 20px;
+  width: 63%;
+}
+
+input.BoardSize
+{
+  width: 30% !important;
+}
+.flex-left{justify-content: left !important;}
+input.BoardColor
+{
+  width: 5% !important;
+}
+
+label.boardsize{
+  text-align: Left !important;
+  margin-right: 17px !important;
+  margin-left: -3px;
+}
+
+label.boardColor{margin-left: 13px;}
+
+.setbox
+{
+  background-image: linear-gradient(#eaab6a, #e2ebf3) !important;
+  padding:20px;
+}
+#input1,
+#input2{justify-content: left !important;}
+
+span.Titik2
+{
+    margin-left: 20px;
+}
+span.TitikBoard
+{
+  margin-left: 2px;
+}
